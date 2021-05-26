@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe App</title>
+</head>
+
+
+<div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+</div>
+
+<body>
+
+
+    <form>
+        <div>
+            <h1>Recipe App</h1>
+        </div>
+
+        <br>
+
+        <div class="recipeIngridients">
+            <label for="rname">Recipe Name</label>
+            <br>
+            <input type="text" id="rname" placeholder="Recipe Name">
+            <br>
+            <label for="ingridients">Ingridients</label>
+            <br>
+            <input type="text" id="ingridients" placeholder="Separates by comma's">
+        </div>
+
+        <br>
+
+
+        <div class="my_uploadImg">
+            <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
+            <label for="file" style="cursor: pointer;"><img src="assets/upload.png"width="15"> Image Upload</i></label>
+            <p><img id="output" width="160" /></p>
+        </div>
+
+        <br>
+
+        <div class="submit">
+            <input type="submit" id="submit" onclick="submit(event)" value="Submit">
+        </div>
+
+
+
+    </form>
+    <div class="fav-container">
+        <h3>Favourite Meals</h3>
+        <ul class="fav-meals">
+            <li>
+                <img src="" alt="">
+                <span></span>
+            </li>
+
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+<script src="script.js "></script>
+
+
+</html>
