@@ -8,69 +8,53 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="style.css">
-    <title>Recipe App</title>
+    <title>Document</title>
 </head>
 
-
-<div>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-</div>
-
 <body>
+    <div class="mobile-container">
+        <header>
+            <input type="text">
+            <button id="search"><i class="fas fa-search"></i></button>
+        </header>
+        <div class="fav-container">
+            <h3>Favourite Meals</h3>
 
-
-    <form>
-        <div>
-            <h1>Recipe App</h1>
+            <ul class="fav-meals">
+                <li>
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_21/2870431/190524-classic-american-cheeseburger-ew-207p-2870431.jpg" alt="">
+                    <span>Burger</span>
+                </li>
+                <li>
+                    <img src="https://www.delonghi.com/Global/recipes/multifry/3.jpg" alt="">
+                    <span>Pizza</span>
+                </li>
+                <li>
+                    <img src="https://goodfoodandwords.com/wp-content/uploads/2019/10/french-apple-tart-with-apples-e1571861916266.jpg" alt="">
+                    <span>Apple Tart</span>
+                </li>
+            </ul>
         </div>
+        <div class="meals">
 
-        <br>
-
-        <div class="recipeIngridients">
-            <label for="rname">Recipe Name</label>
-            <br>
-            <input type="text" id="rname" placeholder="Recipe Name">
-            <br>
-            <label for="ingridients">Ingridients</label>
-            <br>
-            <input type="text" id="ingridients" placeholder="Separates by comma's">
-        </div>
-
-        <br>
+            <div class="meal-body">
 
 
-        <div class="my_uploadImg">
+            </div>
+            <h4></h4>
             <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
-            <label for="file" style="cursor: pointer;"><img src="assets/upload.png"width="15"> Image Upload</i></label>
-            <p><img id="output" width="160" /></p>
+            <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+            <p><img id="output" width="200" /></p>
+            <button>
+                    <i class="fasfa-heart"></i>
+                </button>
+
         </div>
 
-        <br>
 
-        <div class="submit">
-            <input type="submit" id="submit" onclick="submit(event)" value="Submit">
-        </div>
-
-
-
-    </form>
-    <div class="fav-container">
-        <h3>Favourite Meals</h3>
-        <ul class="fav-meals">
-            <li>
-                <img src="" alt="">
-                <span></span>
-            </li>
-
-            </li>
-        </ul>
     </div>
 
-
-
 </body>
-
-<script src="script.js "></script>
-
+<script src=" script.js "></script>
 
 </html>
