@@ -1,1 +1,1 @@
-# recipi-box
+# recipe-box

@@ -3,58 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Recipe App</title>
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="images/favicon.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="mobile-container">
-        <header>
-            <input type="text">
-            <button id="search"><i class="fas fa-search"></i></button>
-        </header>
-        <div class="fav-container">
-            <h3>Favourite Meals</h3>
 
-            <ul class="fav-meals">
-                <li>
-                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_21/2870431/190524-classic-american-cheeseburger-ew-207p-2870431.jpg" alt="">
-                    <span>Burger</span>
-                </li>
-                <li>
-                    <img src="https://www.delonghi.com/Global/recipes/multifry/3.jpg" alt="">
-                    <span>Pizza</span>
-                </li>
-                <li>
-                    <img src="https://goodfoodandwords.com/wp-content/uploads/2019/10/french-apple-tart-with-apples-e1571861916266.jpg" alt="">
-                    <span>Apple Tart</span>
-                </li>
-            </ul>
+    <div class="header">
+
+        <div class="container">
+            <h1 class="header__title">Recipe App</h1>
         </div>
-        <div class="meals">
-
-            <div class="meal-body">
-
-
-            </div>
-            <h4></h4>
-            <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
-            <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
-            <p><img id="output" width="200" /></p>
-            <button>
-                    <i class="fasfa-heart"></i>
-                </button>
-
-        </div>
-
-
     </div>
 
+    <br>
+
+    <div class="actions">
+        <div class="actions__container" id="search-bar-div">
+            <input type="text" class="input" id="search-bar" placeholder="Search">
+        </div>
+    </div>
+
+    <br>
+
+    <hr>
+    <div class="container">
+        <div id="recipes-div">
+        </div>
+
+
+        <br>
+
+        <div class="add_recipeBtn">
+            <button id="add-recipe-button" class="button">Add Recipe</button>
+        </div>
+
+    </div>
+    <script src="./scripts/uuidv4.js"></script>
+    <script src="./scripts/recipe-functions.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
-<script src=" script.js "></script>
 
 </html>

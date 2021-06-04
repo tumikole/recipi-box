@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Recipe App</title>
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ex1">
+        <div class="header">
+            <div class="container">
+
+                <h1>Add Recipe</h1>
+
+                <!-- <h2 class="header__subtitle">What recipe do you want to save today?</h2> -->
+            </div>
+        </div>
+
+        <br>
+
+        <div class="recipe-name">
+            <div class="ingrients_input">
+                <input class="input" type="text" id="recipe-name" placeholder="Recipe Name">
+            </div>
+
+
+
+            <div class="ingridients-subHeading">
+                <h2 id="ingridients-subHeading">Ingredients</h2>
+            </div>
+            <br>
+            <form id="ingredient-form">
+                <input class="input" type="text" name="ingredient-name" placeholder="Add ingredient">
+
+                <!-- <br>
+
+                <input type="file" accept="image/*" onchange="loadFile(event)">
+                <br>
+                <img id="output" /> -->
+            </form>
+            <br>
+
+            <div class="recipe-description">
+                <textarea class="description" id="recipe-description" placeholder="Recipe Steps" rows="10" cols="80%"></textarea>
+            </div>
+            <br>
+            <hr>
+            <div id="ingredients-container">
+
+                <div id="ingredients-section">
+                </div>
+
+                <div>
+                    <div id="ingredients-list">
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <br>
+
+            <div id="controls">
+
+                <button class="button" id="add-recipe">Add New Recipe</i></button>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="./scripts/uuidv4.js"></script>
+    <script src="./scripts/recipe-functions.js"></script>
+    <script src="./scripts/add-recipe.js"></script>
+</body>
+
+
+
+</html>
